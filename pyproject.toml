@@ -1,0 +1,13 @@
+[project]
+name = "quant-research"
+version = "0.1.0"
+description = "Credit-risk scoring and natural-gas storage pricing (JPMorgan Chase quantitative research simulation)"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.26", "pandas>=2.1", "scikit-learn>=1.4"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
